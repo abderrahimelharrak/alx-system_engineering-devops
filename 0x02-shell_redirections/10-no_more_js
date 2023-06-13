@@ -1,2 +1,2 @@
 #!/bin/bash
-rm -R *.js 
+finf . -name "*.js" -type f -delete
