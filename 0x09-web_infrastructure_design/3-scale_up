@@ -1,0 +1,12 @@
+https://i.imgur.com/9iSG44t.jpg
+
+
+
+Explanation:
+
+The user's computer initiates a request to access www.foobar.com.
+DNS resolves www.foobar.com to the Load Balancer (LB).
+The Load Balancer distributes traffic between Server 1 and Server 2.
+Server 1 and Server 2 are dedicated to hosting web, application, and database components.
+Both Load Balancers (LB1 and LB2) are configured as a cluster, providing redundancy and load distribution.
+This design allows for scalable and redundant web hosting with dedicated servers for each component, ensuring better manageability and performance. Remember, this is a simplified representation, and additional details may be needed for a complete production setup.
