@@ -1,0 +1,13 @@
+https://imgur.com/k3iiL38
+
+
+
+Explanation:
+
+The user's computer initiates a request to access www.foobar.com.
+The DNS server resolves www.foobar.com to the server's IP address (8.8.8.8).
+The user's request reaches the server, which hosts both the web server (Nginx) and the application server.
+Nginx handles static content and forwards dynamic content requests to the application server.
+The application server executes the application code and interacts with the MySQL database.
+The response travels back through the web server to the user's computer.
+Remember, this is a simplified schema, and in a real-world scenario, you would also need to consider security measures, backup strategies, and potentially load balancing for better scalability and redundancy.
