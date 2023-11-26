@@ -1,0 +1,10 @@
+https://i.imgur.com/bdx1eyM.jpg
+
+Explanation:
+
+The user's computer initiates a request to access www.foobar.com.
+DNS resolves www.foobar.com to the Load Balancer (LB).
+The Load Balancer distributes traffic between Server 1 (Web Server) and Server 2 (Application Server) using the Round Robin algorithm.
+Server 1 handles static content and forwards dynamic content to Server 2.
+Server 2 executes the application code and communicates with the MySQL Database Cluster.
+The Database Cluster consists of a Primary Node (handles write operations) and Replica Nodes (handle read operations).
