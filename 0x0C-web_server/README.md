@@ -312,6 +312,6 @@ GitHub repository: alx-system_engineering-devops
 Directory: 0x0C-web_server
 File: 4-not_found_page_404
     
-Copyright © 2024 ALX, All rights reserved.
+Copyright © 2024 ALX, All rights resed.
 
 
