@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# write a Bash script that will display information about subdomains.
+# Writes a Bash script that will display information about subdomains.
 
 p_info () {
     dig "$1" | grep -A1 'ANSWER SECTION:' | sed -r "s/$1./$2/g" | awk -F" " ' NR==2 { print "The subdomain " $1 " is a " $4 " record and points to " $5 }'
@@ -7,7 +7,7 @@ p_info () {
 
 if [ "$#" -eq 2 ]
 then
-    print_info "$2.$1" "$2"
+    p_info "$2.$1" "$2"
 else
     p_info "www.$1" "www"
     p_info "lb-01.$1" "lb-01"
